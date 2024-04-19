@@ -1,9 +1,9 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-// const router = jsonServer.router('./db.json')
-const data = fs.readFileSync(__dirname + "../db.json", "utf-8");
-const db = JSON.parse(data);
-const router = jsonServer.router(db);
+const router = jsonServer.router('./db.json')
+// const data = fs.readFileSync(__dirname + "../db.json", "utf-8");
+// const db = JSON.parse(data);
+// const router = jsonServer.router(db);
 
 
 const middlewares = jsonServer.defaults()
@@ -15,7 +15,7 @@ server.use(jsonServer.rewriter({
     '/product/:resource/:id/show': '/:resource/:id'
 }))
 server.use(router)
-server.listen(3000, () => {
+server.listen(3001, () => {
     console.log('JSON Server is running')
 })
 
