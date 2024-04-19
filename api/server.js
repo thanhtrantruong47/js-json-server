@@ -1,6 +1,6 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const data = fs.readFileSync(__dirname + "db.json", "utf-8");
+const data = fs.readFileSync(__dirname + '../db.json');
 const router = jsonServer.router(data)
 const middlewares = jsonServer.defaults()
 
