@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "email": "nguyen@gmail.com",
+      "password": "123123123",
+      "first_name": "le",
+      "last_name": "nguyen",
+      "phone_number": "0988888888",
+      "role": "user",
+      "id": "iut85lr"
+    },
+    {
+      "email": "kim@gmail.com",
+      "password": "123123123",
+      "first_name": "tran ",
+      "last_name": "kim",
+      "phone_number": "0132456789",
+      "role": "admin",
+      "id": "E8fRRTV"
+    },
+    {
+      "email": "hoa@gmail.com",
+      "password": "123123123",
+      "first_name": "hoa",
+      "last_name": "anh",
+      "phone_number": "0132456987",
+      "role": "admin",
+      "id": "58a3"
+    },
+    {
+      "email": "thanhdao@gmail.com",
+      "password": "123123123",
+      "first_name": "dao",
+      "last_name": "truong",
+      "phone_number": "0231233111",
+      "role": "user",
+      "id": "9f6a"
+    },
+    {
+      "email": "th@gmail.com",
+      "password": "thanh123",
+      "first_name": "th",
+      "last_name": "tran",
+      "phone_number": "0999999999",
+      "role": "user",
+      "id": "O8Xqkca"
+    },
+    {
+      "email": "huyen@gmail.com",
+      "password": "123123123",
+      "first_name": "huyen",
+      "last_name": "kim4",
+      "phone_number": "0123465798",
+      "role": "admin",
+      "id": "eP673Ak"
+    },
+    {
+      "id": "8547",
+      "email": "huyen1212@gmail.com",
+      "password": "123123123",
+      "first_name": "huyen3",
+      "last_name": "kim5",
+      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-18 144804.png",
+      "phone_number": "0123465798",
+      "role": "user"
+    },
+    {
+      "email": "huyen0011@gmail.com",
+      "password": "123123123",
+      "first_name": "huyen2",
+      "last_name": "kim3",
+      "avatar_url": "C:\\fakepath\\bg-top.png",
+      "phone_number": "0123465798",
+      "role": "admin",
+      "id": "J4gRVey"
+    },
+    {
+      "email": "huyen0123123o@gmail.com",
+      "password": "123123123",
+      "first_name": "huyen",
+      "last_name": "kim1",
+      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-18 144804.png",
+      "phone_number": "0123465798",
+      "role": "user",
+      "id": "OrQVbQT"
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "123123123",
+      "first_name": "123",
+      "last_name": "123",
+      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-18 144804.png",
+      "phone_number": "0123465798",
+      "role": "admin",
+      "id": "3sufOLb"
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "123123123",
+      "first_name": "123",
+      "last_name": "123",
+      "avatar_url": "C:\\fakepath\\bg-top.png",
+      "phone_number": "0123465798",
+      "role": "user",
+      "id": "o-11aPK"
+    },
+    {
+      "email": "admin12@gmail.com",
+      "password": "123123123",
+      "first_name": "123",
+      "last_name": "123",
+      "avatar_url": "C:\\fakepath\\bg-bottom.png",
+      "phone_number": "0123465798",
+      "role": "user",
+      "id": "vP-ahwM"
+    },
+    {
+      "email": "admin122@gmail.com",
+      "password": "123123123",
+      "first_name": "123",
+      "last_name": "123",
+      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-18 144804.png",
+      "phone_number": "0123465798",
+      "role": "user",
+      "id": "pFYIC8b"
+    },
+    {
+      "email": "admin1222@gmail.com",
+      "password": "123123123",
+      "first_name": "123",
+      "last_name": "123",
+      "avatar_url": "C:\\fakepath\\bg-top.png",
+      "phone_number": "0123465798",
+      "role": "admin",
+      "id": "lXv9YNc"
+    },
+    {
+      "email": "admin122442@gmail.com",
+      "password": "123123123",
+      "first_name": "123123123",
+      "last_name": "123123132",
+      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-18 144804.png",
+      "phone_number": "0123465798",
+      "role": "admin",
+      "id": "pvw8atF"
+    },
+    {
+      "email": "huyen0011333@gmail.com",
+      "password": "123123123",
+      "first_name": "huyen",
+      "last_name": "kim",
+      "avatar_url": "C:\\fakepath\\bg-top.png",
+      "phone_number": "0123465798",
+      "role": "admin",
+      "id": "upG2Jht"
+    },
+    {
+      "email": "huy@gmail.com",
+      "password": "123123123",
+      "first_name": "123",
+      "last_name": "123",
+      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-18 144804.png",
+      "phone_number": "0123465798",
+      "role": "admin",
+      "id": "XqECcCI"
+    },
+    {
+      "email": "thanh123@gmail.com",
+      "password": "123123123",
+      "first_name": "123123123",
+      "last_name": "123",
+      "avatar_url": "C:\\fakepath\\rect.png",
+      "phone_number": "0123456789",
+      "role": "user",
+      "id": "qib_S6-"
+    }
+  ]
+}
