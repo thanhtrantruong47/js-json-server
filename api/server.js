@@ -1,35 +1,26 @@
-const fs = require("fs")
-const path = require("path")
-const db = JSON.parse(fs.readFileSync(path.join("db.json")))
+const fs = require("fs");
+const path = require("path");
+const jsonServer = require('json-server');
 
-// See https://github.com/typicode/json-server#module
-const jsonServer = require('json-server')
+// Path to db.json file outside the api directory
+const dbFilePath = path.join(__dirname, '..', 'db.json'); 
 
-const server = jsonServer.create()
+// Read and parse the contents of db.json
+const db = JSON.parse(fs.readFileSync(dbFilePath));
 
-// Uncomment to allow write operations
-// const fs = require('fs')
-// const path = require('path')
-// const filePath = path.join('db.json')
-// const data = fs.readFileSync(filePath, "utf-8");
-// const db = JSON.parse(data);
-// const router = jsonServer.router(db)
-
-// Comment out to allow write operations
+const server = jsonServer.create();
 const router = jsonServer.router(db);
+const middlewares = jsonServer.defaults();
 
-const middlewares = jsonServer.defaults()
-
-server.use(middlewares)
-// Add this before server.use(router)
+server.use(middlewares);
 server.use(jsonServer.rewriter({
     '/api/*': '/$1',
     '/blog/:resource/:id/show': '/:resource/:id'
-}))
-server.use(router)
-server.listen(8080, () => {
-    console.log('JSON Server is running')
-})
+}));
+server.use(router);
 
-// Export the Server API
-module.exports = server
+server.listen(8080, () => {
+    console.log('JSON Server is running');
+});
+
+module.exports = server;
