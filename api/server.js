@@ -1,6 +1,6 @@
-const fs = require("fs")
-const path = require("path")
-const db = JSON.parse(fs.readFileSync(path.join("db.json")))
+// const fs = require("fs")
+// const path = require("path")
+// const db = JSON.parse(fs.readFileSync(path.join("db.json")))
 
 // See https://github.com/typicode/json-server#module
 const jsonServer = require('json-server')
@@ -8,15 +8,15 @@ const jsonServer = require('json-server')
 const server = jsonServer.create()
 
 // Uncomment to allow write operations
-// const fs = require('fs')
-// const path = require('path')
+const fs = require('fs')
+const path = require('path')
 // const filePath = path.join('db.json')
-// const data = fs.readFileSync(filePath, "utf-8");
-// const db = JSON.parse(data);
-// const router = jsonServer.router(db)
+const data = fs.readFileSync(__dirname + "db.json", "utf-8");
+const db = JSON.parse(data);
+const router = jsonServer.router(db)
 
 // Comment out to allow write operations
-const router = jsonServer.router(db);
+// const router = jsonServer.router(db);
 
 const middlewares = jsonServer.defaults()
 
@@ -24,10 +24,9 @@ server.use(middlewares)
 // Add this before server.use(router)
 server.use(jsonServer.rewriter({
     '/api/*': '/$1',
-    '/blog/:resource/:id/show': '/:resource/:id'
 }))
 server.use(router)
-server.listen(3000, () => {
+server.listen(3001, () => {
     console.log('JSON Server is running')
 })
 
