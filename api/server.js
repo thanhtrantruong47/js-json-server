@@ -2,11 +2,12 @@ const fs = require("fs");
 const path = require("path");
 const jsonServer = require('json-server');
 
-// Path to db.json file outside the api directory
+// Đường dẫn đến tệp db.json bên ngoài thư mục api
 const dbFilePath = path.join(__dirname, '..', 'db.json'); 
 
-// Read and parse the contents of db.json
-const db = JSON.parse(fs.readFileSync(dbFilePath));
+// Đọc dữ liệu từ tệp db.json
+const dbData = fs.readFileSync(dbFilePath, 'utf8');
+const db = JSON.parse(dbData);
 
 const server = jsonServer.create();
 const router = jsonServer.router(db);
@@ -15,9 +16,11 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(jsonServer.rewriter({
     '/api/*': '/$1',
-    '/blog/:resource/:id/show': '/:resource/:id'
 }));
 server.use(router);
+
+// Ghi dữ liệu vào tệp db.json sau mỗi thay đổi
+router.db._.write();
 
 server.listen(8080, () => {
     console.log('JSON Server is running');
