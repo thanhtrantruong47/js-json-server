@@ -3,8 +3,8 @@
     {
       "email": "admin@gmail.com",
       "password": "123123123",
-      "first_name": "123",
-      "last_name": "123",
+      "first_name": "John",
+      "last_name": "Lee",
       "avatar_url": "C:\\fakepath\\Screenshot 2024-03-18 144804.png",
       "phone_number": "0123465798",
       "role": "admin",
